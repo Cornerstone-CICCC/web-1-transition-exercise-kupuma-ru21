@@ -1,12 +1,49 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
 .yellow-circle {
   width: 100px;
   height: 100px;
   background-color: yellow;
-  border-radius: 100px;
+  border-radius: 50%;
+  position: absolute;
+  animation: moveShape 8s infinite;
 }
 
 .yellow-circle:hover {
   display: none;
+}
+
+@keyframes moveShape {
+  0% {
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+  25% {
+    top: 0;
+    left: calc(100vw - 100px);
+    border-radius: 0;
+  }
+  50% {
+    top: calc(100vh - 100px);
+    left: calc(100vw - 100px);
+    border-radius: 50%;
+  }
+  75% {
+    top: calc(100vh - 100px);
+    left: 0;
+    border-radius: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
