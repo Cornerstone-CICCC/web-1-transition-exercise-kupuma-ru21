@@ -45,3 +45,21 @@ body {
     border-radius: 50%;
   }
 }
+
+.loading-bar {
+  width: 0;
+  height: 1%;
+  background-color: blue;
+  animation: fillLoadingBar 8s forwards;
+  border-radius: 10px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fillLoadingBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
