@@ -1,0 +1,12 @@
+.yellow-circle {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 100px;
+}
+
+.yellow-circle:hover {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
